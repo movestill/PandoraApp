@@ -16,8 +16,8 @@ npm install nativefier -g
 Install Google Chrome if you don't already have it (its Flash plugin is
 required).
 
-In Chrome, find the path to the Flash plugin by typing `chrome://plugins` in
-the location bar.
+On OS X, the Flash plugin is located in 
+`~/Library/Application Support/Google/Chrome/PepperFlash/<latest version>/PepperFlashPlayer.plugin`.
 
 Edit `build.sh` and update the `FLASH` variable with the location of your Flash
 plugin.
