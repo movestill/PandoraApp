@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Update Flash path whenever Flash updated.
-# Enter chrome://plugins in Chrome to find location.
-export FLASH="/Users/tim/Library/Application Support/Google/Chrome/PepperFlash/24.0.0.186/PepperFlashPlayer.plugin"
+# Use the path below as a guide to find Chrome's Flash player on OS X.
+export FLASH="/Users/tim/Library/Application Support/Google/Chrome/PepperFlash/25.0.0.127/PepperFlashPlayer.plugin"
 
-nativefier --name Pandora --flash --flash-path "$FLASH"  --inject pandora.js  "http://pandora.com"
+nativefier --name Pandora --flash --flash-path "$FLASH"  --inject pandora.js  "https://pandora.com"

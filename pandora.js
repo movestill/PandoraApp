@@ -21,13 +21,6 @@ globalShortcut.register('ctrl+shift+1', sendKey);
 
 // Subscribe to the play-pause channel in the renderer process.
 ipc.on('play-pause', function () {
-    var pauseBtn = document.getElementsByClassName('pauseButton')[0];
-    var child;
-    if(pauseBtn.style.display === 'block') {
-        child = pauseBtn.childNodes[0];
-    } else {
-        var playBtn = document.getElementsByClassName('playButton')[0];
-        child = playBtn.childNodes[0];
-    }
-    child.click();
+    var playPauseBtn = document.getElementsByClassName('PlayButton')[0];
+    playPauseBtn.click();
 });
